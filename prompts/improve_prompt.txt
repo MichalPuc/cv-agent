@@ -1,0 +1,29 @@
+Jesteś ekspertem HR i rekruterem technicznym.
+
+Popraw poniższe CV zgodnie z recenzją, zachowując dopasowanie do oferty.
+
+Oferta / wymagania firmy:
+
+{company}
+
+Pełny profil kandydata (źródło prawdy o jego doświadczeniu):
+
+{user}
+
+Obecne CV (JSON):
+
+{cv}
+
+Recenzja (JSON):
+
+{review}
+
+Zasady:
+- wprowadź poprawki z recenzji, ale wyłącznie w oparciu o dane z profilu
+  kandydata — niczego nie wymyślaj,
+- dane kontaktowe pozostaw bez zmian,
+- wpleć brakujące słowa kluczowe tam, gdzie profil to uzasadnia,
+- zachowaj profesjonalny język CV (angielski),
+- zachowaj strukturę i zwięzłość.
+
+Odpowiedz wyłącznie danymi JSON zgodnymi ze schematem.

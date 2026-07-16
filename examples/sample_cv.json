@@ -1,0 +1,56 @@
+{
+  "name": "John Doe",
+  "title": "Java Software Engineer",
+  "contact": {
+    "phone": "+1 555 123 4567",
+    "email": "john.doe@example.com",
+    "linkedin": "https://www.linkedin.com/in/john-doe-example/"
+  },
+  "skills": [
+    "Java",
+    "Spring Boot",
+    "Apache Kafka",
+    "REST APIs & Microservices",
+    "SQL & Databases",
+    "Maven / Gradle",
+    "Linux",
+    "Git & GitLab",
+    "CI/CD Pipelines",
+    "Jira",
+    "Python",
+    "AI-assisted Development"
+  ],
+  "languages": ["English C1", "German B2"],
+  "profile": "Software Engineer passionate about Java development, AI, and building scalable software solutions. Interested in backend engineering, distributed systems, LLMs, and modern application architectures. Enjoy working with Java, Spring Boot, APIs, and event-driven systems while continuously learning new technologies and improving development workflows. Outside of tech, interested in music, sports, and maintaining a healthy, active lifestyle.",
+  "experience": [
+    {
+      "company": "Acme Financial Corp",
+      "role": "Software Engineer",
+      "dates": "08/2024 - PRESENT",
+      "bullets": [
+        "Developed backend systems and scalable applications using Java, Spring Boot, SQL, and distributed architectures",
+        "Built and maintained REST APIs, microservices, and business-critical backend services",
+        "Developed a business data validation system with workflow automation, API integrations, and Apache Kafka",
+        "Worked with event-driven architectures and data processing pipelines using Apache Kafka",
+        "Co-built an email classification system leveraging LLMs and RAG solutions, focusing on infrastructure and integrations",
+        "Used AI-assisted tools such as Windsurf and Claude for development, debugging, and optimization",
+        "Collaborated in Agile (Scrum) teams using Jira, GitLab, CI/CD pipelines, and Splunk"
+      ]
+    },
+    {
+      "company": "TechStart Solutions",
+      "role": "Intern",
+      "dates": "09/2023 - 10/2023",
+      "bullets": [
+        "Independently managed a Python project, showcasing coding and problem-solving skills."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor Degree - Computer Science",
+      "school": "University of Technology",
+      "dates": "2020 - 2024"
+    }
+  ]
+}
