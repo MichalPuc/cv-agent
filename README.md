@@ -20,6 +20,12 @@ documents/user_profile.txt ────────┘         ▲              
 
 Model dostaje schemat JSON wygenerowany z modeli Pydantic (`format=CVData.model_json_schema()`), więc odpowiedź jest zawsze poprawnym, walidowanym JSON-em — bez parsowania luźnego tekstu. Recenzent działa jak ATS: liczy dopasowanie 0-100, wskazuje brakujące słowa kluczowe (tylko te pokryte profilem kandydata) i słabe punkty, a krok poprawy wprowadza zmiany bez wymyślania faktów.
 
+Dodatkowe zabezpieczenia pętli recenzji:
+
+- **keep-best** — każda wersja CV jest oceniana, a do PDF-a trafia ta z najwyższym wynikiem (poprawka, która pogorszyła CV, nie przebije lepszej wersji),
+- **blokada faktów** — po każdej poprawie kod (nie LLM) przywraca twarde dane: imię, kontakt, edukację, nazwy firm, stanowiska i daty; doświadczenie wymyślone przez model jest odrzucane,
+- **raport recenzji** — pełna historia iteracji (wyniki, brakujące słowa kluczowe, sugestie) trafia do `output/cv_review.md`.
+
 ## Wymagania
 
 - Python 3.10+
@@ -48,6 +54,7 @@ python main.py -r 3                                   # do 3 iteracji recenzji i
 python main.py -r 0                                   # bez recenzenta
 python main.py -c documents/google.txt -o output/cv_google.pdf
 python main.py -m llama3.1:8b                         # inny model Ollama
+python main.py --review-model qwen2.5:14b             # mocniejszy model tylko do recenzji
 python main.py --from-json output/cv.json             # popraw JSON ręcznie i przerenderuj bez LLM
 ```
 
